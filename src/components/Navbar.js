@@ -1,14 +1,13 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Metamask from "./Metamask";
 
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="metamask">
-        <Link to="/metamask" className="metamask-link">
-          Connect to Metamask🦊
-        </Link>
+      <div className="metamask-link">
+        <Metamask />
       </div>
       <Link to="/">
         <h1 className="logo">
