@@ -12,7 +12,7 @@ function ProfileCard({ title, imageUrl, body, tokenId }) {
           <h2>{title}</h2>
         </div>
         <div className="card-body">
-        <br />
+          <br />
           <p>{body}</p>
           <br />
           <p>{tokenId}</p>

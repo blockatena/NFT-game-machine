@@ -1,46 +1,8 @@
 // import { useState } from "react";
-// import { ethers } from "ethers";
 import "./Metamask.css";
 import { useMoralis } from "react-moralis";
 
 function Metamask() {
-  //   const [data, setData] = useState({
-  //     address: "",
-  //     Balance: null,
-  //   });
-
-  //   const btnhandler = () => {
-  //     if (window.ethereum) {
-  //       window.ethereum
-  //         .request({ method: "eth_requestAccounts" })
-  //         .then((res) => accountChangeHandler(res[0]));
-  //     } else {
-  //       alert("install metamask extension!");
-  //     }
-  //   };
-
-  //   const getbalance = (address) => {
-  //     window.ethereum
-  //       .request({
-  //         method: "eth_getbalance",
-  //         params: [address, "latest"],
-  //       })
-  //       .then((balance) => {
-  //         setData({
-  //           Balance: ethers.utils.formatEther(balance),
-  //         });
-  //       });
-  //   };
-
-  //   const accountChangeHandler = (account) => {
-  //     setData({
-  //       address: account,
-  //     });
-
-  //     getbalance(account);
-  //   };
-
-  //MORALIS CODEBASE
   const {
     authenticate,
     isAuthenticated,
@@ -71,7 +33,9 @@ function Metamask() {
   return (
     <div className="metamask">
       <div className="wallet">
-        <a onClick={login}>Connect to Metamask🦊</a>
+        <a isLoading={isAuthenticating} onClick={login}>
+          Connect to Metamask🦊
+        </a>
       </div>
     </div>
   );
