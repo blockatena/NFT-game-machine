@@ -34,7 +34,9 @@ function Metamask() {
     <div className="metamask">
       <div className="wallet">
         <a isLoading={isAuthenticating} onClick={login}>
-          Connect to Metamask🦊
+          {isAuthenticated
+            ? user.attributes.ethAddress
+            : "Connect to Metamask🦊"}
         </a>
       </div>
     </div>
