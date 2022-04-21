@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rubik+Moonrocks&display=swap');
+
+.metamask{
+    cursor: pointer;
+}
+
+.metamask a{
+    font-family: 'Oswald', sans-serif;
+}

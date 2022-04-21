@@ -8,19 +8,13 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <div className="content">
-          <Home />
-        </div>
-        {/* <div className="content">
-          <Routes>
-            <Route exact path="/">
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/profile" element={<Profile />}></Route>
+          {/* <div className="content">
               <Home />
-            </Route>
-            <Route path="/profile">
-              <Profile />
-            </Route>
-          </Routes>
-        </div> */}
+            </div> */}
+        </Routes>
       </div>
     </Router>
   );

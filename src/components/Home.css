@@ -1,10 +1,11 @@
-.profile{
+.home{
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 50px;
     background-image: url("../../public/mountains.jpg");
 }
 
-.profile .card{
-    padding: 40px;
+.card{
+    padding: 20px;
+    color: #180A0A;
 }
